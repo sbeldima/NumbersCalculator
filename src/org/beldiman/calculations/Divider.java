@@ -1,15 +1,11 @@
 package org.beldiman.calculations;
 
-import org.beldiman.calculations.OperationBase;
-
-public class Divider extends OperationBase {
-
-    public Divider(int firstNumber, int secondNumber) {
-        super(firstNumber, secondNumber);
-    }
+public class Divider implements OperationBase {
 
     @Override
-    public double doOperation() {
-        return (float)firstNumber / secondNumber;
+    public double doOperation(int firstNumber, int secondNumber) {
+        return (float)firstNumber/secondNumber;
     }
 }
+
+

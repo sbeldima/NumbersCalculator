@@ -1,15 +1,9 @@
 package org.beldiman.calculations;
 
-import org.beldiman.calculations.OperationBase;
-
-public class Multiplier extends OperationBase {
-
-    public Multiplier(int firstNumber, int secondNumber) {
-        super(firstNumber, secondNumber);
-    }
+public class Multiplier implements OperationBase {
 
     @Override
-    public double doOperation() {
+    public double doOperation(int firstNumber, int secondNumber) {
         return firstNumber * secondNumber;
     }
 }

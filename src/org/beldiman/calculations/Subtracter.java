@@ -1,14 +1,10 @@
 package org.beldiman.calculations;
 
-import org.beldiman.calculations.OperationBase;
+public class Subtracter implements OperationBase {
 
-public class Subtracter extends OperationBase {
-    public Subtracter(int firstNumber, int secondNumber) {
-        super(firstNumber, secondNumber);
-    }
 
     @Override
-    public double doOperation() {
-        return result = firstNumber - secondNumber;
+    public double doOperation(int firstNumber, int secondNumber) {
+        return firstNumber - secondNumber;
     }
 }

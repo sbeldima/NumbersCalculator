@@ -11,16 +11,16 @@ public class CalculatorOperator implements OperatorInt{
         double result;
         switch (operation) {
             case '+':
-                return new Adder(firstNumber, secondNumber).doOperation();
+                return new Adder().doOperation(firstNumber, secondNumber);
             case '-':
-                return new Subtracter(firstNumber, secondNumber).doOperation();
+                return new Subtracter().doOperation(firstNumber, secondNumber);
             case '*':
-                return new Multiplier(firstNumber, secondNumber).doOperation();
+                return new Multiplier().doOperation(firstNumber, secondNumber);
             case '/':
                 if (secondNumber == 0) {
                     throw new ArithmeticException("Cannot divide by 0!");
                 }
-                return new Divider(firstNumber, secondNumber).doOperation();
+                return new Divider().doOperation(firstNumber, secondNumber);
         }
         return 0;
     }

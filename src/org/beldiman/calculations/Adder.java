@@ -1,13 +1,9 @@
 package org.beldiman.calculations;
 
-import org.beldiman.calculations.OperationBase;
+public class Adder implements OperationBase {
 
-public class Adder extends OperationBase {
-    public Adder(int firstNumber, int secondNumber) {
-        super(firstNumber, secondNumber);
-    }
-
-    public double doOperation() {
-       return result = firstNumber + secondNumber;
+    @Override
+    public double doOperation(int firstNumber, int secondNumber) {
+        return firstNumber + secondNumber;
     }
 }
